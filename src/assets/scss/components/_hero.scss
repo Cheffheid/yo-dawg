@@ -12,12 +12,32 @@
 	flex-direction: column;
 	height: 100vh;
 	justify-content: center;
+
+	.grid-container {
+		width: 100%;
+	} // .grid-container
 } // .hero
 
 
 //-----------------------------------------
-// Hero content
+// Hero content typography
 //-----------------------------------------
 .hero .hero__content {
+	color: $white;
 	width: 100%;
+
+	@include breakpoint(medium) {
+		max-width: 45%;
+	}
+
+	.hero__title {
+		font-family: $font-serif;
+		font-size: rem-calc(75);
+		line-height: 1.25;
+	} // .hero__title
+
+	.hero__description {
+		font-size: rem-calc(20);
+		max-width: 75%;
+	} // .hero__description
 } // .hero .hero__content
