@@ -11,4 +11,12 @@
 		color: $white;
 	} // a
 
+	// Only align-right at medium or wider.
+	// Not sure why this isn't a thing in Foundation, tbh.
+	&.medium-align-right {
+		@include breakpoint(medium) {
+			justify-content: flex-end;
+		}
+	} // &.medium-align-right
+
 } // .site-header .menu
