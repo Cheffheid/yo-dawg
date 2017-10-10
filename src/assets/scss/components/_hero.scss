@@ -2,3 +2,14 @@
 // Hero
 //--------------------------------------------------------------
 
+//-----------------------------------------
+// Hero layout and background
+//-----------------------------------------
+.hero {
+	align-items: center;
+	background-image: url('../img/hero.jpg');
+	background-size: cover;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: space-between;
+} // .hero
