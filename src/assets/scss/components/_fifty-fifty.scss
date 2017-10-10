@@ -1,3 +1,22 @@
 //--------------------------------------------------------------
 // Fifty / Fifty
 //--------------------------------------------------------------
+
+//-----------------------------------------
+// Apply grid container mixins
+//-----------------------------------------
+.fifty-fifty {
+	@include xy-grid;
+	@include xy-grid-container;
+
+	&__left-half,
+	&__right-half {
+		@include xy-cell();
+
+		@include breakpoint(medium) {
+			@include xy-cell(6);
+		}
+
+	} // &-left__half, &-right__half
+
+} // .fifty-fifty
