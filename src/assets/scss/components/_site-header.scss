@@ -35,9 +35,26 @@
 		margin-right: rem-calc(15);
 
 		@include breakpoint(medium) {
-			margin-left: rem-calc(25);
 			margin-right: 0;
+		}
+
+		@include breakpoint(large) {
+			margin-left: rem-calc(25);
 		}
 	} // .button
 
 } // .site-header .menu
+
+
+//-----------------------------------------
+// Title bar tweaks
+//-----------------------------------------
+.site-header {
+	background: transparent;
+
+	// Reset flex property to default.
+	.title-bar-left {
+		flex: 0 1 auto;
+	} // .title-bar-left
+
+} // .site-header
