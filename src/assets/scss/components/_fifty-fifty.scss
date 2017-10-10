@@ -51,7 +51,21 @@
 .fifty-fifty {
 
 	&__title {
+		color: $color-scorpion;
 		font-family: $font-serif;
+
+		@include breakpoint(medium) {
+			font-size: rem-calc(45);
+			margin-bottom: rem-calc(15);
+		}
+
+		&::before {
+			content: '';
+			background-color: $primary-color;
+			display: block;
+			height: rem-calc(5);
+			width: rem-calc(77);
+		} // &::before
 	} // &__title
 
 } // .fifty-fifty
