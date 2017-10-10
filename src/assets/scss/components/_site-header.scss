@@ -58,3 +58,15 @@
 	} // .title-bar-left
 
 } // .site-header
+
+
+//-----------------------------------------
+// Site header positioning
+//-----------------------------------------
+.site-header {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	width: 100%;
+} // .site-header
