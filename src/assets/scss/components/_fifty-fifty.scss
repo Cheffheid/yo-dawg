@@ -9,6 +9,9 @@
 	@include xy-grid;
 	@include xy-grid-container;
 
+	margin-bottom: rem-calc(90);
+	margin-top: rem-calc(90);
+
 	&__left-half,
 	&__right-half {
 		@include xy-cell();
