@@ -6,6 +6,11 @@
 // Menu tweaks
 //-----------------------------------------
 .site-header .menu {
+	margin-top: rem-calc(50);
+
+	@include breakpoint(medium) {
+		margin-top: 0;
+	}
 
 	a {
 		color: $white;
