@@ -24,4 +24,13 @@
 		}
 	} // &.medium-align-right
 
+	// Slight button width tweak
+	.button {
+		margin: 0 rem-calc(15);
+
+		@include breakpoint(medium) {
+			margin: 0;
+		}
+	} // .button
+
 } // .site-header .menu
