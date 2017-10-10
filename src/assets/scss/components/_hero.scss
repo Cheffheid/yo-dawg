@@ -40,4 +40,9 @@
 		font-size: rem-calc(20);
 		max-width: 75%;
 	} // .hero__description
+
+	.button:first-child {
+		margin-right: rem-calc(15);
+	} // .button:first-child
+
 } // .hero .hero__content
