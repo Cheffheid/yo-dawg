@@ -66,7 +66,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(940);
+$global-width: rem-calc(956);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #3498db,
@@ -280,7 +280,7 @@ $breadcrumbs-item-separator-color: $medium-gray;
 // ----------
 
 $button-font-family: inherit;
-$button-padding: 0.85em 1em;
+$button-padding: 1.05em 2em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
@@ -293,7 +293,7 @@ $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
   default: 0.9rem,
-  large: 1.25rem,
+  large: 1.15rem,
 );
 $button-palette: map-merge($foundation-palette, (
   white: $white
