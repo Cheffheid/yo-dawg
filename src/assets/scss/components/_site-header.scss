@@ -65,8 +65,12 @@
 // Site header positioning
 //-----------------------------------------
 .site-header {
-	@include position(absolute, rem-calc(20), null, null, 50%);
+	@include position(absolute, strip-unit(rem-calc(20)));
 
-	transform: translateX(-50%);
 	width: 100%;
+
+	@include breakpoint(medium) {
+		left: 50%;
+		transform: translateX(-50%);
+	}
 } // .site-header

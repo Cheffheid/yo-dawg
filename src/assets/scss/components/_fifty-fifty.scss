@@ -75,7 +75,7 @@
 		}
 
 		&::before {
-			@include position(relative, rem-calc(-13));
+			@include position(relative, strip-unit(rem-calc(-13)));
 
 			content: '';
 			background-color: $primary-color;
