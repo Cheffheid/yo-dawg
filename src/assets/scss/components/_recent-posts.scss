@@ -28,3 +28,24 @@
 		}
 	} // .card
 } // .recent-posts
+
+
+//-----------------------------------------
+// Recent Posts card typography
+//-----------------------------------------
+.recent-posts .card {
+
+	&__title {
+		font-size: rem-calc(20);
+	} // &__title
+
+	&__description {
+		font-size: rem-calc(14);
+		line-height: 1.25;
+	} // &__description
+
+	.card-section {
+		background: $color-athens-gray;
+	} // .card-section
+
+} // .recent-posts .card
