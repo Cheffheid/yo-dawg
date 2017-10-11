@@ -23,6 +23,16 @@
 		font-size: rem-calc(22);
 	} // &__slide-description
 
+	.orbit-bullets {
+		top: rem-calc(-100);
+
+		.is-active {
+			height: rem-calc(16);
+			width: rem-calc(16);
+			transform: translateY(rem-calc(3));
+		} // .is-active
+	} // .orbit-bullets
+
 } // .carousel
 
 
