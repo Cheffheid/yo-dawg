@@ -13,7 +13,7 @@
 	margin-bottom: rem-calc(90);
 	margin-top: rem-calc(90);
 
-	@include breakpoint(medium) {
+	@include breakpoint(large) {
 		padding-left: 0;
 		padding-right: 0;
 	}
