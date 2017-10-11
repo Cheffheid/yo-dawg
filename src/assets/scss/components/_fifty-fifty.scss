@@ -22,11 +22,16 @@
 	&__right-half {
 		@include xy-cell();
 
+		margin-bottom: rem-calc(20);
+		margin-top: rem-calc(20);
+
 		@include breakpoint(medium) {
 			@include xy-cell(6);
 			@include xy-grid-collapse();
-		}
 
+			margin-bottom: 0;
+			margin-top: 0;
+		}
 	} // &__left-half, &__right-half
 
 	&__left-half {
@@ -41,6 +46,15 @@
 		}
 	} // &__right-half
 
+	// Ensure the text goes on top when they stack.
+	&--image-text {
+		flex-flow: column-reverse wrap;
+
+		@include breakpoint(medium) {
+			flex-flow: row wrap;
+		}
+	} // &--image-text
+
 
 } // .fifty-fifty
 
@@ -53,6 +67,7 @@
 	&__title {
 		color: $color-scorpion;
 		font-family: $font-serif;
+		font-size: rem-calc(25);
 
 		@include breakpoint(medium) {
 			font-size: rem-calc(45);
