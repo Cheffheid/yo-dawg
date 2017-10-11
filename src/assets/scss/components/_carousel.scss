@@ -33,14 +33,12 @@
 	} // &__slide-description
 
 	.orbit-bullets {
-		top: rem-calc(-50);
-
-		@include breakpoint(medium) {
-			top: rem-calc(-50);
-		}
+		bottom: rem-calc(50);
+		position: absolute;
+		width: 100%;
 
 		@include breakpoint(large) {
-			top: rem-calc(-100);
+			bottom: rem-calc(100);
 		}
 
 		.is-active {
