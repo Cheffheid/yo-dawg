@@ -24,3 +24,23 @@
 	} // &__slide-description
 
 } // .carousel
+
+
+//-----------------------------------------
+// Only display arrows on hover
+//-----------------------------------------
+.carousel {
+
+	.orbit-previous,
+	.orbit-next {
+		opacity: 0;
+	} // .orbit-previous, .orbit-next
+
+	.orbit-wrapper:hover .orbit-previous,
+	.orbit-wrapper:hover .orbit-next,
+	.orbit-previous:focus,
+	.orbit-next:focus {
+		opacity: 1;
+	} // .orbit-wrapper:hover .orbit-previous, .orbit-wrapper:hover .orbit-next, .orbit-previous:focus, .orbit-next:focus
+
+} // .carousel
