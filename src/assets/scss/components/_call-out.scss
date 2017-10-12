@@ -7,28 +7,54 @@
 //-----------------------------------------
 .call-out {
 	background-color: $color-athens-gray;
-	padding: rem-calc(100) 0;
+	padding: rem-calc(60) 0;
+	text-align: center;
+
+	@include breakpoint(medium) {
+		padding: rem-calc(100) 0;
+		text-align: left;
+	}
 
 	&__title {
 		font-family: $font-serif;
+		font-size: rem-calc(30);
+
+		@include breakpoint(medium) {
+			font-size: rem-calc(45);
+		}
 	} // &__title
 
 	&__form {
 		display: flex;
+		flex-flow: column;
+
+		@include breakpoint(medium) {
+			flex-flow: row;
+		}
 	} // &__form
 
 	&__button {
-		border-radius: 0 rem-calc(15) rem-calc(15) 0;
+		border-radius: rem-calc(45);
 		flex: 0 0 auto;
 		padding-bottom: rem-calc(25);
 		padding-top: rem-calc(25);
+
+		@include breakpoint(medium) {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
 	} // &__button
 
 	&__input {
-		border-radius: rem-calc(15) 0 0 rem-calc(15);
+		border-radius: rem-calc(45);
 		padding-bottom: rem-calc(35);
 		padding-left: rem-calc(25);
 		padding-top: rem-calc(35);
+
+		@include breakpoint(medium) {
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
 	} // &__input
 
 	.grid-x {
