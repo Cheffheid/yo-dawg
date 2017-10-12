@@ -28,23 +28,21 @@
 
 	.card {
 		@include xy-cell();
+		@include xy-grid-collapse;
 
 		margin-left: auto;
 		margin-right: auto;
 		max-width: rem-calc(278);
 
 		@include breakpoint(smallmedium) {
-			@include xy-cell(6);
-
 			margin-left: 0;
 			margin-right: 0;
+			max-width: rem-calc(300);
+			width: 49%;
 		}
 
 		@include breakpoint(medium) {
-			@include xy-cell(4);
-
-			margin-left: 0;
-			margin-right: 0;
+			width: 32%;
 		}
 	} // .card
 } // .recent-posts
