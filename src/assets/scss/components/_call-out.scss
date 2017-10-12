@@ -1,3 +1,37 @@
 //--------------------------------------------------------------
 // Newsletter sign up
 //--------------------------------------------------------------
+
+//-----------------------------------------
+// Section layout
+//-----------------------------------------
+.call-out {
+	background-color: $color-athens-gray;
+	padding: rem-calc(100) 0;
+
+	&__title {
+		font-family: $font-serif;
+	} // &__title
+
+	&__form {
+		display: flex;
+	} // &__form
+
+	&__button {
+		border-radius: 0 rem-calc(15) rem-calc(15) 0;
+		flex: 0 0 auto;
+		padding-bottom: rem-calc(25);
+		padding-top: rem-calc(25);
+	} // &__button
+
+	&__input {
+		border-radius: rem-calc(15) 0 0 rem-calc(15);
+		padding-bottom: rem-calc(35);
+		padding-left: rem-calc(25);
+		padding-top: rem-calc(35);
+	} // &__input
+
+	.grid-x {
+		align-items: center;
+	} // .grid-x
+} // .call-out
