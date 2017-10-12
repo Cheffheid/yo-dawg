@@ -27,9 +27,11 @@
 	&__form {
 		display: flex;
 		flex-flow: column;
+		margin-top: rem-calc(45);
 
 		@include breakpoint(medium) {
 			flex-flow: row;
+			margin-top: 0;
 		}
 	} // &__form
 
