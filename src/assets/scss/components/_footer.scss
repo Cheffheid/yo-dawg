@@ -5,3 +5,36 @@
 //-----------------------------------------
 // Footer layout
 //-----------------------------------------
+.footer {
+	padding: rem-calc(53) rem-calc(20);
+	text-align: center;
+
+	@include breakpoint(medium) {
+		text-align: left;
+	}
+
+	&__img-cell {
+		margin-bottom: rem-calc(30);
+
+		@include breakpoint(medium) {
+			margin-bottom: 0;
+			padding-right: rem-calc(20);
+		}
+	} // &__img-cell
+
+	&__text-cell {
+
+		@include breakpoint(medium) {
+			text-align: right;
+		}
+
+		p:last-child {
+			margin-bottom: 0;
+		} // p:last-child
+
+	}
+
+	.grid-container {
+		align-items: center;
+	} // .grid-container
+} // .footer
